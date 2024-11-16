@@ -1,9 +1,12 @@
 import { useState } from 'react'
+import Header from './components/Header.jsx'
+import Searchbar from './components/Searchbar.jsx'
 
 function App() {
   return (
     <div>
-      <h1 className='text-red-200'>Hello world</h1>
+      <Header />
+      <Searchbar />
     </div>
   )
 }
