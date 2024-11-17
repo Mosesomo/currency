@@ -11,8 +11,8 @@ Welcome to the Currency Exchange Rates App! This React-based web application pro
 - **Clean UI**: Clean design with modern React components and Tailwind CSS styling
 
 ## Demo
+![image](https://github.com/user-attachments/assets/768113b2-6691-4e92-89e1-04397ca812b6)
 
-screen shot
 
 ## Technologies Used
 ### Frontend
