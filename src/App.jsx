@@ -33,13 +33,13 @@ const App = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-0">
       {/* Header with Sticky Search Bar */}
-      <header className="sticky w-full top-0 bg-white shadow-md z-10 text-gray-700">
+      <header className="w-full top-0 bg-white shadow-md z-10 text-gray-700">
         <div className="flex justify-between items-center p-5">
           <div className="flex justify-center items-center gap-3">
             <BsCurrencyExchange size={32} className="text-gray-700" />
             <h1 className="hidden md:block text-2xl font-bold">Currency Exchange Rates</h1>
           </div>
-          <div className="relative flex items-center">
+          <div className="fixed right-4 flex items-center">
             <CiSearch
               size={20}
               className="absolute left-3 text-gray-400 pointer-events-none"
