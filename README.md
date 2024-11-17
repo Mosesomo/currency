@@ -1,4 +1,4 @@
--# Currency Exchange Rates App
+# Currency Exchange Rates App
 
 Welcome to the Currency Exchange Rates App! This React-based web application provides an easy-to-use interface for searching and exploring various currency exchange rates. With a responsive design and search functionality, it’s perfect for financial enthusiasts, travelers, or anyone curious about currency data.
 
