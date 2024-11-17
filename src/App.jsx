@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import CurrencyList from "./components/CurrencyList";
 import fxData from "./data/fx.json";
+import { CiSearch } from "react-icons/ci";
+import { BsCurrencyExchange } from "react-icons/bs";
 
 // Main Application Component
 const App = () => {
@@ -31,16 +33,25 @@ const App = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-0">
       {/* Header with Sticky Search Bar */}
-      <header className="sticky top-0 bg-white shadow-md z-10 text-gray-700">
+      <header className="sticky w-full top-0 bg-white shadow-md z-10 text-gray-700">
         <div className="flex justify-between items-center p-5">
-          <h1 className="text-2xl font-bold">Currency Exchange Rates</h1>
-          <input
-            type="text"
-            placeholder="Search for a currency..."
-            value={searchTerm}
-            onChange={handleSearch}
-            className="p-2 border rounded"
-          />
+          <div className="flex justify-center items-center gap-3">
+            <BsCurrencyExchange size={32} className="text-gray-700" />
+            <h1 className="hidden md:block text-2xl font-bold">Currency Exchange Rates</h1>
+          </div>
+          <div className="relative flex items-center">
+            <CiSearch
+              size={20}
+              className="absolute left-3 text-gray-400 pointer-events-none"
+            />
+            <input
+              type="text"
+              placeholder="Search for a currency..."
+              value={searchTerm}
+              onChange={handleSearch}
+              className="pl-10 pr-4 py-2 border rounded focus:outline-none focus:ring focus:ring-gray-600"
+            />
+          </div>
         </div>
       </header>
 
