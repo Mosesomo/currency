@@ -11,7 +11,7 @@ const CurrencyItem = ({ currency }) => {
         <div className="flex items-center bg-white p-2 rounded shadow-md">
           {/* Flag */}
           <img
-            src={`src/assets/flags/${flagCode}.png`}
+            src={`/flags/${flagCode}.png`}
             alt={name}
             className="w-12 h-12 mr-4"
           />
